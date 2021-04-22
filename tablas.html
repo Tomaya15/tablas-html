@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+    <link rel="stylesheet" href="styles-tablas.css">
+    
+</head>
+<!-- 
+    Las tablas en HTML sirven para representar el contenido tabulado
+
+    table -> etiqueta de encierre de una tabla
+    tr    -> table row, etiqueta que construya una fila
+    td    -> table data, etiqueta que construye una celda
+
+    el numero de celdas dentro de un tr establece 
+
+    colspan -> para que ocupe mas de una fila
+    rowspan -> para que ocupe mas de una columna
+ -->
+
+<body>
+    <header><h1>TABLA</h1></header>
+    <main>
+        <div id="main-container">
+            <table>
+                <caption>Horario de clases</caption>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>L</th>
+                        <th>M</th>
+                        <th>X</th>
+                        <th>J</th>
+                        <th>V</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td >8:30 - 9:30</td>
+                        <td>Matematicas</td>
+                        <td>Matematicas</td>
+                        <td>Sociales</td>
+                        <td>Matematicas</td>
+                        <td>Matematicas</td>
+                    </tr>
+
+                    <tr>
+                        <td>9:30 - 10:30</td>
+                        <td>Ingles</td>
+                        <td>Literatura</td>
+                        <td>Matematicas</td>
+                        <td>Naturales</td>
+                        <td>Geografia</td>
+                    </tr>
+
+                    
+                    <tr>
+                        <td>10:30 - 11:30</td>
+                        <td>Programacion</td>
+                        <td>Tecnologia</td>
+                        <td>Arte</td>
+                        <td>Naturales</td>
+                        <td>Sociales</td>
+                    </tr>
+
+                    
+                    <tr>
+                        <td id="recreo">11:30 - 12:00</td>
+                        <td id="recreo"colspan="5">Recreo</td>
+                    </tr>
+
+                    
+                    <tr>
+                        <td>12:00 - 13:00</td>
+                        <td>Geologia</td>
+                        <td>Algebra</td>
+                        <td>Psicologia</td>
+                        <td>Historia</td>
+                        <td>Ed Fisica</td>
+                    </tr>
+
+                    <tr>
+                        <td>13:00 - 14:00</td>
+                        <td>Ingles</td>
+                        <td>Literatura</td>
+                        <td>Matematicas</td>
+                        <td>Naturales</td>
+                        <td>Geografia</td>
+                    </tr>
+                    
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="6"></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </main>
+    <footer></footer>
+
+</body>
+</html>
